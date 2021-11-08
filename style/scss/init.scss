@@ -1,0 +1,23 @@
+/* Reset du style */
+@import './basics/reset.css';
+
+/* Basics style */
+@import './basics/style.css';
+@import './basics/fonts.css';
+@import './basics/responsive.css';
+
+/* Components */
+@import './components/form.css';
+@import './components/buttons.css';
+@import './components/error_message.css';
+@import './components/blinklLockLandscape.scss';
+
+/* Routes */
+@import './routes/landing_page.css';
+@import './routes/captcha.css';
+@import './routes/redeem_coupon.css';
+@import './routes/end_screen.css';
+@import './routes/video.css';
+@import './routes/game_gift.css';
+@import '../experience/experience.css';
+@import './routes/products_bio.scss';

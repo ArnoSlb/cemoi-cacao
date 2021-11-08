@@ -1,0 +1,148 @@
+/* Import variables */
+@import './_variables';
+
+* { font-family: $paradeliftOne }
+
+body{
+    width: 100vw;
+    overflow: hidden;
+    background-size: cover;
+    background-color: $tfb_beige;
+}
+
+.responsive_background{
+    z-index: -1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    & img{
+        position: absolute;
+        width: 24%;
+        &.ourson{
+            top: 50%;
+            max-width: 250px;
+            &.green{
+                left: 50%;
+                transform: translateY(-75%) translateX(-550px) scale(1.2, 1.2);
+                -webkit-transform: translateY(-75%) translateX(-550px) scale(1.2, 1.2);
+            }
+            &.blue{
+                right: 50%;
+                transform: translateY(-50%) translateX(550px) scale(-1.2, 1.2);
+                -webkit-transform: translateY(-50%) translateX(550px) scale(-1.2, 1.2);
+            }
+        }
+        &.right{ right: 0; }
+        &.left{ left: 0; }
+        &.top{ top: 0; }
+        &.bottom{ bottom: 0; }
+
+    }
+
+    & #bottom_left{
+        transform: rotateX(180deg) rotateY(180deg);
+        -webkit-transform: rotateX(180deg) rotateY(180deg);
+    }
+    & #bottom_right{
+        transform: rotateX(180deg) rotateY(180deg);
+        -webkit-transform: rotateX(180deg) rotateY(180deg);
+    }
+
+}
+
+body > .container{
+    width: 100vw;
+    height: 100%;
+    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section.container{
+    padding: 8%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+section#hide{ display: none; }
+
+a:link,
+a:visited,
+a:hover,
+a:active{ color: $white; text-decoration: none;}
+
+.background::before, .background::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+// .background::before{
+//     background: url('../../../src/imgs/confetti_gauche_v2.png');
+//     background-repeat: no-repeat;
+//     // transform: translate(20%, -45%) rotate(-90deg);
+//     // -webkit-transform: translate(20%, -45%) rotate(-90deg);
+//     top: 0;
+//     left: 0;
+// }
+// .background::after{
+//     background: url('../../../src/imgs/confetti_droite_v2.png');
+//     // background-repeat: no-repeat;
+//     // transform: translate(40%, 65%) rotate(-25deg) rotateZ(180deg);
+//     // -webkit-transform: translate(40%, 65%) rotate(-25deg) rotateZ(180deg);
+//     bottom: -10%;
+// }
+
+.confetti_start{
+    top: 0;
+    position: absolute;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    left: 0;
+    z-index: -1;
+}
+
+.confetti_end{
+    bottom: 0;
+    position: absolute;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    right: 0;
+    z-index: -1;
+}
+
+.claim_coq{
+    bottom: 0;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: 2%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sound_icons{
+    position: absolute;
+    z-index: 500;
+    height: 20px;
+    width: 20px;
+    background-color: rgba($color: #ffffff, $alpha: (.5));
+    padding: 10px;
+    border-radius: 40px;
+    right: 1vh;
+    top: 1vh;
+}

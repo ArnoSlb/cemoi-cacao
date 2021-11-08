@@ -1,0 +1,172 @@
+/* Import variables */
+@-webkit-keyframes load_bar {
+  0%, 25% {
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+@keyframes load_bar {
+  0%, 25% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+#video_intro {
+  display: none;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: black;
+}
+#video_intro.active {
+  opacity: 1;
+  pointer-events: all;
+}
+#video_intro.inactive {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+#video_intro.content {
+  overflow: hidden;
+}
+#video_intro .content_video {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#video_intro .content_video div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#video_intro #button_skip_video {
+  position: absolute;
+  z-index: 100;
+  top: 1.5vh;
+  left: 1vh;
+  padding: 6px;
+  border-radius: 5px;
+  color: #423932;
+  border: 2px solid #423932;
+  font-family: "Paradelift One", "Montserrat", sans-serif;
+  cursor: pointer;
+}
+#video_intro #video_player {
+  height: auto;
+  width: 100%;
+}
+
+#video_outro {
+  display: none;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: black;
+}
+#video_outro.active {
+  opacity: 1;
+  pointer-events: all;
+}
+#video_outro.inactive {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+#video_outro.content {
+  overflow: hidden;
+}
+#video_outro .content_video {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#video_outro .content_video div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#video_outro #button_skip_video_outro {
+  position: absolute;
+  z-index: 100;
+  top: 1.5vh;
+  left: 1vh;
+  padding: 6px;
+  border-radius: 5px;
+  color: #423932;
+  border: 2px solid #423932;
+  font-family: "Paradelift One", "Montserrat", sans-serif;
+  cursor: pointer;
+}
+#video_outro #video_player_outro {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (orientation: portrait) {
+  #video_intro #video_player {
+    min-height: 100%;
+    height: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+    width: auto;
+  }
+
+  #video_outro #video_player_outro {
+    min-height: 100%;
+    height: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=video.css.map */

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <title>Cemoi || Printemps Bio</title>
+    <meta name="description" content="Cemoi || Temps Fort Bio"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/imgs/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/imgs/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/imgs/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./src/imgs/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./src/imgs/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="google" content="notranslate"/>
+    <meta name="generator" content="Three.js Editor">
+
+    <link rel="stylesheet" href="./style/css/init.css">
+    <link rel="stylesheet" href="./style/experience/experience.css">
+    
+    <!-- <link rel="stylesheet" href="./style/css/init.css"> -->
+    <script src="./scripts/init.js" type="module" charset="utf-8"></script>
+    <!-- <script type="module" src="./scripts/experience.js"></script>     -->
+
+    <meta property="fb:app_id" content="466450574728704" />
+    <meta property="og:url" content="https://cemoi.blinkl.com/bio/" >
+    <meta property="og:type" content="article" >
+    <meta property="og:title" content="Cemoi || Printemps Bio" >
+    <meta property="og:description" content="Invite tes amis pour leur faire gagner leurs vacances en famille en France" >
+    <meta property="og:image" content="https://cemoi.blinkl.com/bio/src/imgs/cemoi_share.jpg" >
+    <meta property="og:image:width" content="500" >
+    <meta property="og:image:height" content="500" >
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187213108-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // gtag('config', 'GA_MEASUREMENT_ID');
+    gtag('config', 'UA-187213108-1');
+    gtag('config', 'DC-8992992');
+    </script>
+
+    <!-- reCAPTCHA Google V3-->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeyE1waAAAAAMy-M7b-HzhI3PdFLPLy2xw9aGEm"></script> 
+
+    <!-- FORCE HTTPS -->
+    <!-- <script type="text/javascript">
+    console.log('je passe dans force https')
+    var check = window.location.href.split(":");
+    if(!window.location.href.includes('localhost') && !window.location.href.includes('192.168') && !check[1]){
+        window.location.href = "https://"+window.location.href;
+        console.log('je passe dans force https 1er cas')
+    } else if (!window.location.href.includes('localhost') && !window.location.href.includes('192.168') && check[0]!="https"){
+        window.location.href = "https:"+check[1];
+        console.log('je passe dans force https 2e cas')
+    }
+    </script> -->
+</head>
+<body ontouchstart="">
+    <section id="BlinklLockLandscape">
+        <div class="popup_content">
+            <p class="popup_title">
+                <span>Vous êtes en mode paysage</span>
+            </p>
+            <p class="popup_text centered">Pour optimiser l'expérience, tournez votre téléphone</p>
+            <img id="logo_Lock_Landscape" src="./src/imgs/Blinkl_LockLandscape_Logo.svg" alt="lock landscape picto">
+        </div>
+    </section>
+
+    <!-- <audio id="audioContainer" loop>
+        <source src="https://cdn.blinkl.com/contenus_blinkl_clients/Cemoi_chasse_aux_oeufs/175_full_the-subtle-comic_0157.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <div class="container">
+        <section id="error_message">
+            <p class="subtitle white">Veuillez vérifier tous les champs</p>
+        </section>
+
+        <!-- <div id=sound_icons>
+            <img id="mute_icon" src="./src/icons/unmute.svg" alt="sound icon">
+        </div> -->
+
+        <section id="landing_page" class="container background">
+
+            <div id="landing_page_background"></div>
+            <div id="landing_form">
+                <div id="landing_header">
+                    <img src="./src/imgs/logo_cemoi.svg" alt="logo header cemoi">
+                </div>
+                <div id="landing_page_container" class="content">
+                    <div id=landing_page_title>
+                        <h1>Découvrez <br></h1>
+                        <h1>les secrets</h1>
+                        <h2>de</h2>
+                        <h1 class="white">nos plantations</h1>
+                        <h2>en</h2>
+                        <h1>réalité virtuelle</h1>
+                        <img src="./src/imgs/logo_transparence_badge.svg" alt="">
+                    </div>
+                    <div id="f_form" class="form" action="">
+                        <div id="landing_page_text" class="content">
+                            <label class="chocolate uppercase" for="f_email"></label>
+                            <input id="f_email" class="f_form" type="email" name="f_mail" placeholder="cemoi.transparence@gmail.com">
+                        </div>
+                        <div class="content checkbox">
+                            <input id="f_optin_1" class="f_form" type="checkbox">
+                            <label for="f_optin_1">J’accepte le partage de mes informations personnelles au groupe Cémoi pour le strict usage du jeu*</label>
+                        </div>
+                        <div class="content checkbox">
+                            <input id="f_optin_2" class="f_form" type="checkbox">
+                            <label for="f_optin_2">J’accepte le <u id="game_rules">règlement du jeu*</u></label>
+                        </div>
+                        <div class="content checkbox">
+                            <input id="f_optin_3" class="f_form" type="checkbox">
+                            <label for="f_optin_3">J’autorise Cémoi à utiliser mes données personnelles à des fins commerciales*</label>
+                        </div>
+                        <div class="google_captcha">
+                            <p>Ce site est protégé par reCAPTCHA. La</p>
+                            <a href="https://policies.google.com/privacy?hl=fr" target="_blank">politique de confidentialité</a>
+                            <p>et les</p>
+                            <a href="https://policies.google.com/terms?hl=fr" target="_blank">conditions d'utlisations</a>
+                            <p>de Google s'appliquent.</p>
+                        </div>
+                    </div>
+                    <div id="play_button" class="button_container red">
+                        <div class="button button_content"><p class="white">Découvrir</p></div>
+                    </div>
+                </div>
+                <div id="landing_footer">
+                    <img src="./src/imgs/logo_created.png" alt="logo footer cemoi">
+                </div>
+                <img id="tiret_haut_gauche" src="./src/imgs/Vector 4.svg" alt="">
+                <img id="tiret_haut_droit" src="./src/imgs/Vector 5.svg" alt="">
+                <img id="tiret_bas_droit" src="./src/imgs/Vector 3.svg" alt="">
+            </div>
+        </section>
+
+        <section id="video_intro">
+            <div class="content_video"></div>
+            <div id="button_skip_video">Passer</div>
+        </section>
+        
+        <section id="loading_page">
+			<div class="loading_page_container">
+				<div id="landing_header">
+					<img src="./src/imgs/logo_cemoi.svg" alt="logo header cemoi">
+				</div>
+				<div class="loading_page_content">
+                    <div id="loading_page_intro">
+                        Notre programme “Transparence Cacao” vise à promouvoir une culture durable
+                        du cacao, en mettant les producteurs et leurs organisations au centre de l’action.
+                    </div>
+					<img src="./src/imgs/CEMOI_Etapes_Transparence_v2.png" alt="logo représentant les étapes de transparence Cémoi">
+                    <div class="loading_page_content_bar">
+                        <p class="loading_page_text">chargement...</p>
+                        <div id="loading_page_bar">
+                            <div id="loading_page_progress"></div>
+                        </div>
+                    </div>
+                    <button id="start_exp">Démarrez l'expérience</button>
+				</div>
+				<div id="landing_footer">
+					<img src="./src/imgs/logo_created.png" alt="logo footer cemoi">
+				</div>
+			</div>
+				<img id="tiret_haut_gauche" src="./src/imgs/Vector 4.svg" alt="">
+				<img id="tiret_haut_droit" src="./src/imgs/Vector 5.svg" alt="">
+				<img id="tiret_bas_droit" src="./src/imgs/Vector 3.svg" alt="">
+		</section>
+
+		<section id="experience">
+			<div id="interface_header">
+				<div id="step_line">
+					<img id="circle_cemoi" src="./src/imgs/logo-qualite-cemoi.png" alt="logo cemoi" class="step_circle circle_active">
+					<div id="bar_1" class="step_bar"></div>
+					<div id="circle_1" class="step_circle">1</div>
+					<div id="bar_2" class="step_bar"></div>
+					<div id="circle_2" class="step_circle">2</div>
+					<div id="bar_3" class="step_bar"></div>
+					<div id="circle_3" class="step_circle">3</div>
+					<div id="bar_4" class="step_bar"></div>
+					<div id="circle_4" class="step_circle">4</div>
+					<div id="bar_5" class="step_bar"></div>
+					<div id="circle_5" class="step_circle">5</div>
+				</div>
+				<div id="exp_info_container">
+					<div id="step_message_container" class="hide_message_container">
+						<p id="step_message_container_close">+</p>
+						<div id="step_message">
+							<p id="step_message_level">etape 1:</p>
+							<p id="step_message_title">La récolte</p>
+							<p id="step_message_definition"></p>
+						</div>
+					</div>
+					<div id="interstep_message_container" class="hide_message_container">
+						<div id="interstep_message">
+							<p id="interstep_message_text"></p>
+						</div>
+					</div>
+					<div id="info_container">
+						<div id="info_container_content">
+							<img id="infoImg" src="./src/icons/logo-qualite-environnementale.png" alt="logo qualité">
+							<div>
+								<h2 id="infoTitle"> title will be displayed here</h2>
+								<!-- <p id="infoBold"> infoBold will be displayed here</p> -->
+								<p id="info"> info will be displayed here</p>
+							</div>
+						</div>
+						<div id="info_container_close">Reprendre le parcours</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="exp_intro_message">
+				<p class="intro_important">Suivez le parcours du cacao dans l’une de nos plantations, et découvrez ce que vous avez gagné !</p>
+				<br>
+				<p>Déplacez-vous dans l'espace,</p>
+				<p id="exp_instruction" class="white_exp">et tournez votre téléphone,</p> 
+				<p id="exp_instruction_2">vous êtes dans une immersion</p>
+				<img src="./src/imgs/kisspng-logo-clip-art-font-brand-black-white-m-5cbafb3d4131b3.8199694015557578852671.png" alt="360 logo">
+				<button id="play"> J'ai compris</button>
+			</div>
+			<div id="mute_container">
+				<img id="mute_logo" src="./src/icons/unmute.svg" alt="mute logo">
+			</div>
+			<div id="container_360">
+				<div class="circle_360"></div>
+				<img id="logo_360" src="./src/imgs/kisspng-logo-clip-art-font-brand-white-m-5cbafb3d4131b3.8199694015557578852671.png" alt="360 logo">
+			</div>
+			<button id="next_step"> étape suivante ></button>
+		</section>
+
+        <section id="video_outro">
+            <div class="content_video"></div>
+            <div id="button_skip_video_outro">Passer</div>
+        </section>
+
+        <section id="products_bio">
+            <div id="header_bio">
+                <img id="header_bio_logo" src="./src/imgs/Logo-Bio-et-responsable-logo.png" alt="logo bio et responsable">
+                <img id="header_bio_logo_cemoi" src="./src/imgs/logo_cemoi.svg" alt="logo cémoi">
+            </div>
+            <div id="all_products_bio">
+                <img src="./src/imgs/3D TABLETTES BIO/CemoiBioDegustation72Cacao.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/CemoiBioDegustationLait50Cacao.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/Volume-CemoiBioGourmandAmadesRaisins180g.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/Volume-CemoiBioGourmandOrangeFevesCacao180g.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/Volume-CemoiBioGourmandLaitNoisEnt180g.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/Volume-CemoiBioPatissLait175g.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/Volume-CemoiBioPatissNoir175g.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/CemoiBioFamilialRizSouffle100g.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/CemoiBioFamilialLait100g.png" alt="Cemoi Bio Degustation">
+                <img src="./src/imgs/3D TABLETTES BIO/CemoiBioFamilialNoir100g.png" alt="Cemoi Bio Degustation">
+            </div>
+            <div id="cock_message_bio">
+                <div id="bio_message_container">
+                    <p>Bravo, vous avez suivi le parcours du cacao jusqu'à nos chocolateries !</p>
+                    <div id=button_gift_discover>Découvrez <br>votre cadeau !</div>
+                </div>
+                <div id="triangle_container_border"></div>
+                <div id="triangle_container"></div>
+                <img src="./src/imgs/cemoi_coq_rogné.png" alt="coq cemoi">
+            </div>
+            <img id="tiret_bas_droit" src="./src/imgs/Vector 3.svg" alt="">
+        </section>
+
+        <div class="popup_container"> 
+            <!-- Sharing to fb popup -->
+            <section id="end_screen_2" class="container background">
+                <div id="end_screen_container_2" class="container">
+                    <div class="content">
+                        <p class="title bigsize red">Merci</p>
+                        <p class="subtitle red">d'avoir joué avec Cemoi</p>
+                        <img class="placeholder transparence" src="./src/imgs/logo-transparence-cacao-black.png" alt="coupon">
+                        <div id="share_game" class="button_container true_red espace_margin">
+                            <div class="button button_content flex">
+                                <p class="white">Partager le jeu</p>
+                                <img class="facebook_logo" src="./src/imgs/facebook_logo.png" alt="logo facebook">
+                            </div>
+                        </div>
+                        <div class="button_container green espace_margin">
+                            <a href="https://laboutiquecemoi.fr/collections/les-chocolats-bio" class="button button_content "><p class="white">Acheter bio</p></a>
+                        </div>
+                        <div id="reload_game" class="button_container white button_red_border espace_margin">
+                            <a href="https://www.transparence-cacao.com/fr/" class="button button_content flex"><p class="copper">En savoir plus</p><img class="facebook_logo" src="./src/imgs/picto_return.svg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+                <img class="claim_coq" src="./src/imgs/cemoi_coq.png" alt="">
+                <img class="confetti_start" src="./src/imgs/confetti_gauche_v2.png" alt="">
+                <img class="confetti_end" src="./src/imgs/confetti_droite_v2.png" alt="">
+            </section>
+            <section id="redeem_coupon" class="container background">
+                <div id="coupon_container" class="container active">
+                    <img id="close_coupon_container" class="close_popup" src="./src/imgs/close.png" alt="close redeem page">
+                    <div id="coupon_content" class="content">
+                        <p class="title bigsize red">Bravo !</p>
+                        <p class="subtitle brown">Vous avez remporté<span class="red"> 20% de réduction</span> valable uniquement sur <span class="red">www.laboutiquecemoi.fr</span></p>
+                        <img class="placeholder" src="./src/imgs/coupons/cp_10.png" alt="coupon">
+                    </div>
+                    <div id="get_last_form" class="button_container true_red">
+                        <div class="button button_content true_red"><p class="white">Je confirme mon gain</p></div>
+                    </div>
+                </div>
+                <div id="redeem_container" class="container">
+                    <div class="content">
+                        <p class="title brown bigsize centered">Proche de vous <span class="title bigsize red"> depuis toujours</span></p>
+                        <p class="subtitle brown centered">Je <span class="subtitle red">confirme mes gains</span> en remplissant les champs ci-dessous :</p>
+                        <!-- Second form -->
+                        <div id="s_form" class="form first" action="">
+                            <div class="first_part active">
+                                <div class="content double">
+                                    <div>
+                                        <label class="brown uppercase" for="s_firstname">Prénom*</label>
+                                        <input id="s_firstname" class="s_form brown" type="text" name="prenom" placeholder="Pintemps" required>
+                                    </div>
+                                    <div>
+                                        <label class="brown uppercase" for="s_surname">Nom*</label>
+                                        <input id="s_surname" class="s_form brown" type="text" name="nom" placeholder="Bio" required>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <label class="brown uppercase" for="s_email">E-mail*</label>
+                                    <input id="s_email" class="s_form brown" type="email" name="email" placeholder="oeuf.paques@mail.fr" required disabled>
+                                </div>
+                                <div class="content">
+                                    <label class="brown uppercase" for="s_phone">N° de téléphone*</label>
+                                    <input id="s_phone" class="s_form brown" type="tel" name="telephone" placeholder="00 00 00 00 00" minlength="9" maxlength="14" required>
+                                </div>
+                            </div>
+                            <div class="second_part absolute">
+                                <div class="content postal_adress">
+                                    <!-- <div>
+                                        <label class="brown uppercase" for="s_postal_num">Adresse postale*</label>
+                                        <input id="s_postal_num" class="s_form brown" type="number" name="numero adresse" placeholder="12">
+                                    </div> -->
+                                    <div>
+                                        <label class="brown uppercase" for="s_postal_adress">Adresse*</label>
+                                        <input id="s_postal_adress" class="s_form brown" type="text" name="adresse" placeholder="12 Rue de paques">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <label class="brown uppercase" for="s_postal_code">Code postal*</label>
+                                    <input id="s_postal_code" class="s_form brown" type="number" name="cp" placeholder="75000">
+                                </div>
+                                <div class="content">
+                                    <label class="brown uppercase" for="s_city">Ville*</label>
+                                    <input id="s_city" class="s_form brown" type="text" name="ville" placeholder="Paris">
+                                </div>
+                            </div>
+                            <div class="form_status first"></div>
+                            <div id="redeem_button" class="button_container true_red">
+                                <div class="button button_content"><p class="white">Confirmer</p></div>
+                            </div>
+                            <!-- <div id="form_back_button" class="button_container white inactive">
+                                <div class="button button_content"><p class="red">Retour</p></div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <img class="claim_coq" src="./src/imgs/cemoi_coq.png" alt="">
+                <img class="confetti_start" src="./src/imgs/confetti_gauche_v2.png" alt="">
+                <img class="confetti_end" src="./src/imgs/confetti_droite_v2.png" alt="">
+            </section>
+            <!-- Last page -->
+            <section id="end_screen" class="container background">
+                <div id="end_screen_container" class="container">
+                    <div class="content">
+                        <p class="title bigsize red">Merci</p>
+                        <p class="subtitle brown">Vous allez recevoir un E-mail <br> de confirmation de gain, <br> encore bravo !</p>
+                        <img class="placeholder transparence" src="./src/imgs/logo-transparence-cacao-black.png" alt="coupon">
+                        <div id="share_game_2" class="button_container true_red espace_margin">
+                            <div class="button button_content flex">
+                                <p class="white">Partager le jeu</p>
+                                <img class="facebook_logo" src="./src/imgs/facebook_logo.png" alt="logo facebook">
+                            </div>
+                        </div>
+                        <div class="button_container green espace_margin">
+                            <!-- <div class="button button_content"> <img src="./src/imgs/picto_return.svg" alt=""> <p class="red">Revenir au site</p></div> -->
+                            <a href="https://laboutiquecemoi.fr/collections/les-chocolats-bio" class="button button_content"> <p class="white">Acheter bio</p></a>
+                        </div>
+                        <div id="reload_game" class="button_container white button_red_border espace_margin">
+                            <!-- <div class="button button_content"> <img src="./src/imgs/picto_return.svg" alt=""> <p class="red">Revenir au site</p></div> -->
+                            <a href="https://www.transparence-cacao.com/fr/" class="button button_content flex"> <p class="copper">En savoir plus</p><img class="facebook_logo" src="./src/imgs/picto_return.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <img class="claim_coq" src="./src/imgs/cemoi_coq.png" alt="">
+                <img class="confetti_start" src="./src/imgs/confetti_gauche_v2.png" alt="">
+                <img class="confetti_end" src="./src/imgs/confetti_droite_v2.png" alt="">
+            </section>
+            <!-- This is needed to get the user's image -->
+            <section id="hide">
+                <img id='my_blob' src=''/>
+            </section>
+            <section id="cgu"></section>
+        </div>
+    <!-- Script Google -->
+    <!--
+    Event snippet for LP Jeu Carnaval 2021 on https://www.cemoi.fr/proche-de-vous/carnaval: Please do not remove.
+    Place this snippet on pages with events you're tracking.
+    Creation date: 01/25/2021
+-->
+    <script>
+    gtag('event', 'conversion', {
+        'allow_custom_scripts': true,
+        'send_to': 'DC-8992992/cemoi21/carnav21+standard'
+    });
+    </script>
+    <noscript>
+        <img src="https://ad.doubleclick.net/ddm/activity/src=8992992;type=cemoi21;cat=carnav21;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" alt=""/>
+    </noscript>
+    <!-- End of event snippet: Please do not remove -->
+</body>
+
+<script>
+// Script FB
+window.fbAsyncInit = function() {
+    FB.init({
+        appId      : '466450574728704',
+        xfbml      : true,
+        version    : 'v9.0',
+        redirect_uri: './',
+        display: 'iframe'
+    });
+    FB.AppEvents.logPageView();
+};
+
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+</html>

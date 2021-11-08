@@ -1,0 +1,20 @@
+/* Import variables */
+@import '../basics/_variables';
+
+#error_message{
+    z-index: 1000;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    padding: 18px 10px 10px 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: $red;
+    display: none;
+    -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    & p{ padding-bottom: 0; }
+    &.active{ display: block; }
+}

@@ -1,0 +1,207 @@
+/* Import variables */
+@-webkit-keyframes load_bar {
+  0%, 25% {
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+@keyframes load_bar {
+  0%, 25% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+.form {
+  padding: 1em 2em;
+  border: 1px dashed #423932;
+  margin-top: 1em;
+  width: 70%;
+  border-radius: 15px;
+  color: #423932;
+}
+.form#s_form {
+  position: relative;
+  max-width: 400px;
+}
+.form.stepper.first .form_status::before, .form.stepper.second .form_status::after {
+  background-color: #E1241B;
+}
+.form.stepper .form_status {
+  display: flex;
+  justify-content: center;
+}
+.form.stepper .form_status::before, .form.stepper .form_status::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 5px;
+  border: 1px solid #E1241B;
+  margin: 0 5px;
+}
+.form.first .first_part {
+  opacity: 1;
+  pointer-events: all;
+}
+.form.second .second_part {
+  opacity: 1;
+  pointer-events: all;
+}
+.form .first_part, .form .second_part {
+  opacity: 0;
+  pointer-events: none;
+}
+.form .first_part.absolute, .form .second_part.absolute {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.form .content {
+  padding-bottom: 15px;
+}
+.form .content.checkbox {
+  display: flex;
+}
+.form .content.double {
+  display: flex;
+}
+.form .content.double > *:first-child input {
+  border-radius: 10px 0px 0px 10px;
+  border-right: none;
+}
+.form .content.double > *:last-child input {
+  border-radius: 0px 10px 10px 0px;
+}
+.form .content.double.postal_adress input {
+  margin-top: 30px;
+}
+.form .content.double.postal_adress label {
+  position: absolute;
+}
+.form .content.double.postal_adress *:last-child {
+  width: 100%;
+}
+.form .content.double.postal_adress *:last-child label {
+  opacity: 0;
+  pointer-events: none;
+}
+.form .content.double.postal_adress #s_postal_num {
+  max-width: 80px;
+}
+.form input:not([type=checkbox]) {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+}
+.form input:not([type=checkbox]):disabled {
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.form input:not([type=checkbox]).brown {
+  border: 1px solid #4E2613;
+}
+.form input:not([type=checkbox])::placeholder {
+  font-style: italic;
+  color: #502c1d;
+  opacity: 0.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form input[type=checkbox] {
+  position: relative;
+  visibility: hidden;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+.form input[type=checkbox]:checked + label::after {
+  background-color: #893C47;
+}
+.form input[type=checkbox] + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  visibility: visible;
+  border-radius: 5px;
+  border: 1px solid #423932;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  transform: translateX(-20px) translateY(-50%);
+  -webkit-transform: translateX(-20px) translateY(-50%);
+}
+.form input[type=checkbox] + label {
+  position: relative;
+  max-width: calc(100% - 18px);
+  right: 0;
+  padding-left: 15px;
+  box-sizing: border-box;
+  color: #423932;
+  font-size: 14px;
+  line-height: 16px;
+}
+.form .google_captcha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 12px;
+  color: #423932;
+  margin: 18px;
+  line-height: 12px;
+}
+.form .google_captcha a {
+  color: white;
+  margin-right: 5px;
+}
+.form .google_captcha p {
+  margin-right: 5px;
+}
+.form #redeem_button {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  #landing_form #landing_page_container #f_form {
+    padding: 0 1em 1em 1em;
+    width: 78%;
+    margin-bottom: 0.7em;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,51 @@
+/* Import variables */
+@import './_variables';
+
+@media (min-width:700px) {
+    h1, p.title, span.title .outlined, .title.bigsize{ font-size: 50px; line-height: 55px; }
+    .container:not(#redeem_container) .title.bigsize{ margin: inherit; }
+    p.subtitle, p.subtitle > span{ font-size: 30px; line-height: 30px; }
+    body{
+        background: radial-gradient($cream 75%, $brown 200%);
+    }
+}
+
+@media (max-width:900px) { .responsive_background{ display: none; } }
+
+@media (max-height: 600px) {
+    #landing_page{
+        & > .content { margin-top: 0px;}
+    }
+}
+
+@media (max-width: 400px) and (max-height: 660px) {
+    #landing_page{
+        & .subtitle{ display: none; }
+        & .button_container{ margin: 0 auto; padding:  10px;}
+    }
+
+    h1, p.title:not(.bigsize), span.title .outlined{ font-size: 25px; line-height: 30px; }
+    .title.bigsize{ font-size: 30px; line-height: 32px; padding-bottom: 10px; }
+}
+
+@media (min-width: 400px) and (min-height: 660px) {
+    #iframe{ height: 100% !important; }
+}
+
+@media (max-height: 600px) {
+    .claim_coq{ display: none; }
+}
+
+// @media (max-height: 700px) and (max-width: 400px) {
+//     #landing_page_container {
+//         margin-top: 50px !important;
+//     }
+// }
+
+@media (max-width: 760px){
+    #game_helper_screen_2 {
+        & .game_interface_up_chrono {
+            top: 52px !important;
+        }
+    }
+}

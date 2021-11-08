@@ -1,0 +1,50 @@
+@-webkit-keyframes load_bar {
+  0%, 25% {
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+@keyframes load_bar {
+  0%, 25% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+#captcha {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: #FFF2DD;
+  display: none;
+}
+
+/*# sourceMappingURL=captcha.css.map */

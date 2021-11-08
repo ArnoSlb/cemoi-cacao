@@ -1,0 +1,58 @@
+// Variables
+$brown: #4E2613;
+$light_brown: #853A24;
+$red: #E1241B;
+$white: #ffffff;
+$cream: #FFF2DD;
+$chocolate: #502C1D;
+$copper: #6A3B2A;
+$beige: #E0BF8B;
+$tfb_beige: #E6BD93;
+$tfb_marron: #B68B67;
+$tfb_noir: #423932;
+$tfb_gris: #EEE7E0;
+$tfb_orange: #D2644C;
+$tfb_bordeaux: #893C47;
+$tfb_vert: #72BDB3;
+$tfb_creme: #F9F1E4;
+$bio_vert: #42AB34;
+
+$argone: 'Argone', 'Montserrat', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$paradeliftOne: 'Paradelift One', sans-serif;
+
+// Keyframes animations
+@-webkit-keyframes load_bar {
+    0%, 25%{ -webkit-transform: scaleX(0); }
+    100%{ -webkit-transform: scaleX(1); }
+}
+
+@keyframes load_bar {
+    0%, 25%{ transform: scaleX(0); }
+    100%{ transform: scaleX(1); }
+}
+
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+            transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+            transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}

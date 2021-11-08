@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../scss/basics/_variables.scss","../../scss/routes/captcha.scss"],"names":[],"mappings":"AAwBA;EACI;IAAS;;EACT;IAAM;;;AAGV;EACI;IAAS;;EACT;IAAM;;;AAGV;EACE;IACE;IACQ;IACR;;EAEF;IACE;IACQ;IACR;;;AAGJ;EACE;IACE;IACQ;IACR;;EAEF;IACE;IACQ;IACR;;;ACrDJ;EACI;EACA;EACA;EACA;EACA,kBDFI;ECGJ","file":"captcha.css"}

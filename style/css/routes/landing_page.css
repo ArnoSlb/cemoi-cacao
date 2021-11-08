@@ -1,0 +1,261 @@
+/* Import variables */
+@-webkit-keyframes load_bar {
+  0%, 25% {
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+@keyframes load_bar {
+  0%, 25% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+#landing_page {
+  padding: 0;
+  height: 100%;
+  height: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+  width: 100vw;
+  background-color: #FFF2DD;
+  display: flex;
+}
+#landing_page_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#landing_page h1 {
+  line-height: 40px;
+  font-size: 18px;
+  color: #E6BD93;
+}
+#landing_page.inactive {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+#landing_page > .content {
+  z-index: 100;
+  margin-top: 50px;
+}
+#landing_page > .content, #landing_page > #f_form {
+  position: relative;
+  padding: 0 8%;
+}
+#landing_page #landing_header, #landing_page #landing_footer {
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+#landing_page #landing_header img:first-child, #landing_page #landing_footer img:first-child {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  z-index: -1;
+}
+#landing_page #landing_header img:last-child, #landing_page #landing_footer img:last-child {
+  max-width: 70px;
+  margin: auto;
+  display: block;
+}
+#landing_page #landing_page_title {
+  width: 70%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 160px;
+  background-color: #893C47;
+  border-radius: 15px;
+  padding: 1em 2em;
+  color: #E6BD93;
+}
+#landing_page #landing_page_title h1 {
+  font-size: 2em;
+  line-height: 35px;
+  margin-right: 10px;
+  text-align: center;
+}
+#landing_page #landing_page_title h2 {
+  margin-right: 10px;
+}
+#landing_page #landing_page_title img {
+  width: 20%;
+  max-width: 80px;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+#landing_page #landing_page_title .white {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#landing_page #landing_footer {
+  width: 100%;
+  min-height: 50px;
+  pointer-events: none;
+}
+#landing_page #landing_footer img:first-child {
+  bottom: 0;
+}
+#landing_page #landing_footer img:last-child {
+  max-width: 50px;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+#landing_page img#logo_pog {
+  width: 50%;
+  max-width: 180px;
+  margin: 10px auto;
+  position: relative;
+  display: none;
+  opacity: 0;
+}
+#landing_page img#tree {
+  position: absolute;
+  top: -5px;
+  height: 175px;
+  right: 17px;
+  z-index: -1;
+}
+
+#landing_page_background {
+  height: 100vh;
+  width: 40vw;
+  background: center/cover no-repeat url("../../../src/imgs/planteurs-219.jpg");
+}
+
+#landing_form {
+  width: 60vw;
+  background-color: #E6BD93;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grecaptcha-badge {
+  opacity: 0;
+}
+
+#tiret_haut_gauche {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 15vw;
+  max-width: 250px;
+}
+
+#tiret_haut_droit {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  width: 25vw;
+  max-width: 350px;
+}
+
+#tiret_bas_droit {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  width: 25vw;
+  max-width: 550px;
+}
+
+@media screen and (max-width: 900px) {
+  #landing_page_background {
+    display: none;
+  }
+
+  #landing_form {
+    width: 100vw;
+  }
+}
+@media screen and (max-height: 850px) {
+  #landing_page #landing_header img:last-child {
+    max-width: 50px;
+  }
+
+  #landing_page #landing_page_title h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  #landing_page #landing_page_title h2 {
+    font-size: 14px;
+  }
+
+  #landing_page #landing_page_title {
+    min-height: 0px;
+  }
+
+  #f_form label {
+    font-size: 12px;
+  }
+
+  .google_captcha p, .google_captcha a {
+    font-size: 10px;
+  }
+
+  .form .google_captcha {
+    margin: 0;
+  }
+
+  .form input:not([type=checkbox]) {
+    font-size: 14px;
+  }
+}
+@media screen and (max-height: 600px) {
+  #landing_page #landing_page_title {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=landing_page.css.map */

@@ -1,0 +1,106 @@
+/* Import variables */
+@-webkit-keyframes load_bar {
+  0%, 25% {
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+@keyframes load_bar {
+  0%, 25% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+.button_container.inactive {
+  border: 1px solid #E1241B;
+}
+.button_container.inactive.red {
+  background-color: #ffffff;
+}
+.button_container.inactive p.white {
+  color: #E1241B;
+}
+
+.button_container {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  padding: 20px 10px 20px 10px;
+  border-radius: 10px;
+  border: none;
+  max-width: 250px;
+  text-align: center;
+  cursor: pointer;
+}
+.button_container.red {
+  background-color: #893C47;
+}
+.button_container.true_red {
+  background-color: #E1241B;
+}
+.button_container.green {
+  background-color: #42AB34;
+  text-decoration: none;
+}
+.button_container.white {
+  background-color: #ffffff;
+}
+.button_container.picto .button_content {
+  display: flex;
+  justify-content: center;
+}
+.button_container.picto .button_content img {
+  margin-right: 10px;
+}
+.button_container .button_content p {
+  font-size: 20px;
+}
+
+.button_red_border {
+  border: 1px solid #6A3B2A;
+  border-radius: 10px;
+  padding: 18px 10px 18px 10px;
+}
+
+#intro_button {
+  max-width: 120px;
+}
+
+#play_button {
+  margin-top: 1em;
+  width: 100%;
+}
+
+#get_last_form {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=buttons.css.map */

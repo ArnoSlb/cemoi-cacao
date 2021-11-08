@@ -1,0 +1,194 @@
+/* Import variables */
+@import '../basics/_variables';
+
+#products_bio {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    min-height: 100%;
+    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+    background-color: $tfb_creme;
+
+    & #header_bio {
+        height: 13vh;
+        min-height: 80px;
+        width: 100%;
+        max-width: 100vw;
+        background-image: url("https://cemoi.blinkl.com/bio//src/imgs/Logo-Bio-et-responsable-bg.png");
+        background-position: top;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+
+        & #header_bio_logo{
+            max-height: 80%;
+            display: flex;
+            padding: 20px;
+        }
+
+        & #header_bio_logo_cemoi{
+            max-width: 20%;
+            max-height: 80%;
+        }
+    }
+
+    & #all_products_bio {
+        height: 65vh;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        padding: 0 20px;
+
+        & img {
+            height: 25vh;
+            margin: 1.5vw;
+            filter: drop-shadow(10px 10px 10px rgb(153, 153, 153));
+        }
+    }
+
+    & #cock_message_bio {
+        height: 22vh;
+        width: 100%;
+        position: relative;
+        left: 5vh;
+
+        & img {
+            position: absolute;
+            bottom: 0;
+            width: 9vw;
+        }
+
+        & #bio_message_container{
+            background-color: $tfb_beige;
+            border: 1px solid $tfb_noir;
+            color: $tfb_noir;
+            width: 230px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            position: absolute;
+            left: 10vw;
+            bottom: 4vw;
+
+            & #button_gift_discover {
+                background-color: $tfb_bordeaux;
+                border-radius: 8px;
+                color: $tfb_gris;
+                border: 1px solid white;
+                text-transform: uppercase;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                text-align: center;
+                margin: 10px 10px 2px;
+            }
+
+            & #button_gift_discover:hover{
+                cursor: pointer;
+            }
+        }
+
+        & #triangle_container{
+            position: absolute;
+            left: calc(10vw - 19px);
+            bottom: 6vw;
+            display : inline-block;
+            height : 0;
+            width : 0;
+            border-bottom : 20px solid $tfb_beige;
+            border-left : 20px solid transparent;
+        }
+
+        & #triangle_container_border{
+            position: absolute;
+            left: calc(10vw - 21px);
+            bottom: calc(6vw - 1px);
+            display : inline-block;
+            height : 0;
+            width : 0;
+            border-bottom : 22px solid $tfb_noir;
+            border-left : 22px solid transparent;
+        }
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 1366px){
+
+    #products_bio {
+
+        & #header_bio {
+
+            & #header_bio_logo{
+                max-height: 60%;
+            }
+            & #header_bio_logo_cemoi{
+                position: relative;
+                top: -1.2vh;
+            }
+        }
+
+        & #all_products_bio{
+            width: 90%;
+            height: 42vh;
+            // padding-bottom: 20px;
+
+            & img {
+                width: 15%;
+                height: auto;
+                margin: 2.5%;
+            }
+        }
+
+        & #cock_message_bio {
+            left: 0;
+            height: 20vh;
+
+            & img {
+                width: auto;
+                height: 16vw;
+                max-height: 200px;
+            }
+
+            & #bio_message_container{
+                max-width: 60%;
+                bottom: 6vw;
+                left: 22vw;
+
+                & p{
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+                & #button_gift_discover {
+                    padding: 10px;
+                    font-size: 14px;
+                    margin: 5px 10px 2px;
+                }
+            }
+
+            & #triangle_container{
+                bottom: 16vw;
+                left: calc(22vw - 19px);
+            }
+
+            & #triangle_container_border{
+                bottom: calc(16vw - 1px);
+                left: calc(22vw - 21px);
+            }
+        }
+    }
+
+}
